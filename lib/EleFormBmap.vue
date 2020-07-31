@@ -200,4 +200,8 @@ export default {
 .highlighted .ele-form-search-location {
   color: #ddd;
 }
+
+.BMap_geolocationAddressText {
+  line-height: 32px;
+}
 </style>
