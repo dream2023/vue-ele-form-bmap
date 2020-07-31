@@ -14,8 +14,8 @@
             slot="suffix"
             style="font-size:20px;margin-right:10px;"
           ></i>
-          <span class="ele-form-search-keywords">{{item.value}}&nbsp;&nbsp;</span>
-          <span class="ele-form-search-location">{{item.address}}</span>
+          <span class="ele-form-search-keywords">{{ item.value }}&nbsp;&nbsp;</span>
+          <span class="ele-form-search-location">{{ item.address }}</span>
         </div>
       </template>
     </el-autocomplete>
@@ -150,8 +150,8 @@ export default {
     },
     // 搜索结束
     handleSearchEnd (res) {
-      if (res && res.Ar && this.cb) {
-        const list = res.Ar.map((pos) => {
+      if (res && res.Ir && this.cb) {
+        const list = res.Ir.map((pos) => {
           return {
             address: pos.address,
             point: pos.point,
@@ -196,6 +196,7 @@ export default {
   font-size: 12px;
   color: #b4b4b4;
 }
+
 .highlighted .ele-form-search-location {
   color: #ddd;
 }
