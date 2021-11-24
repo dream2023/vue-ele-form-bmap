@@ -150,8 +150,8 @@ export default {
     },
     // 搜索结束
     handleSearchEnd (res) {
-      if (res && res.Hr && this.cb) {
-        const list = res.Hr.map((pos) => {
+      if (res && res.Ir && this.cb) {
+        const list = res.Ir.map((pos) => {
           return {
             address: pos.address,
             point: pos.point,
